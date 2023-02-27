@@ -4,7 +4,9 @@ kind: ClusterConfig
 
 metadata:
   name: lil-eks
-  region: us-east-2
+  region: us-west-2
+  tags:
+    project: linkedin-learning
 
 nodeGroups:
   - name: worker-node

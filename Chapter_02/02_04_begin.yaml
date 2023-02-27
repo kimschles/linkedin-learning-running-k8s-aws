@@ -5,6 +5,8 @@ kind: ClusterConfig
 metadata:
   name: CLUSTER_NAME
   region: AWS_REGION
+  tags:
+    project: linkedin-learning
 
 nodeGroups:
   - name: WORKER_NODE_NAME
