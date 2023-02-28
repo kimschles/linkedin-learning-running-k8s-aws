@@ -10,4 +10,4 @@ spec:
       protocol: TCP
   type: NodePort
   selector:
-    app: pod-service
+    app: pod-info

@@ -6,7 +6,6 @@ metadata:
     annotations:
         alb.ingress.kubernetes.io/scheme: internet-facing
         alb.ingress.kubernetes.io/target-type: ip
-        
         alb.ingress.kubernetes.io/tags: Environment=dev,Team=test
 spec:
   ingressClassName: alb
@@ -15,7 +14,7 @@ spec:
         paths:
           - path: /
             pathType: Exact
-            backend:
+            backend:  
               service:
                 name: echoserver
                 port:

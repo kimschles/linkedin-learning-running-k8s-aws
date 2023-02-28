@@ -6,7 +6,7 @@ metadata:
     annotations:
         alb.ingress.kubernetes.io/scheme: internet-facing
         alb.ingress.kubernetes.io/target-type: ip
-        alb.ingress.kubernetes.io/tags: Environment=staging,Team=lil
+        alb.ingress.kubernetes.io/tags: Environment=staging,Team=linkedin-learning
 spec:
   ingressClassName: alb
   rules:
@@ -16,5 +16,6 @@ spec:
             pathType: Exact
             backend:
               service:
-                name: pod-info
-                port: 80
+                name: pod-service
+                port:
+                  number: 80
