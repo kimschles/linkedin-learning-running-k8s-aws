@@ -1,4 +1,11 @@
-aws iam get-policy --policy-arn arn:aws:iam::xxxxxxxxxxxx:policy/AWSLoadBalancerControllerIAMPolicy
+aws iam create-policy \
+    --policy-name AWSLoadBalancerControllerIAMPolicy \
+    --policy-document file://iam_policy.json
+
+---
+
+aws iam get-policy \ 
+--policy-arn arn:aws:iam::xxxxxxxxxxxx:policy/AWSLoadBalancerControllerIAMPolicy
 
 --- 
 
