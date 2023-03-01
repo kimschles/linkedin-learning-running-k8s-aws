@@ -1,0 +1,8 @@
+aws iam get-policy --policy-arn arn:aws:iam::xxxxxxxxxxxx:policy/AWSLoadBalancerControllerIAMPolicy
+
+--- 
+
+eksctl create iamserviceaccount   --cluster=lil-eks \
+--namespace=kube-system   --name=aws-load-balancer-controller   
+--role-name AmazonEKSLoadBalancerControllerRole \ 
+--attach-policy-arn=arn:aws:iam::xxxxxxxxxxxx:policy/AWSLoadBalancerControllerIAMPolicy \  
