@@ -4,8 +4,8 @@ aws iam create-policy \
 
 ---
 
-aws iam get-policy \ 
---policy-arn arn:aws:iam::xxxxxxxxxxxx:policy/AWSLoadBalancerControllerIAMPolicy
+eksctl utils associate-iam-oidc-provider \ 
+    --cluster=lil-eks --approve
 
 --- 
 
