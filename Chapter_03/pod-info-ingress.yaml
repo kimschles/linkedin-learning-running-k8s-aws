@@ -5,7 +5,7 @@ metadata:
     namespace: staging
     annotations:
         alb.ingress.kubernetes.io/scheme: internet-facing
-        alb.ingress.kubernetes.io/target-type: ip
+        alb.ingress.kubernetes.io/target-type: instance
         alb.ingress.kubernetes.io/tags: Environment=staging,Team=linkedin-learning
 spec:
   ingressClassName: alb

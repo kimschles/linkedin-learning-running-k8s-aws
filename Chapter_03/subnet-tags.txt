@@ -4,8 +4,6 @@ kubernetes.io/cluster/lil-eks: shared
 kubernetes.io/role/internal-elb: 1
 
 
----
-
 Public Subnets Tags
 
 kubernetes.io/cluster/lil-eks: shared

@@ -1,5 +1,3 @@
 account number:
 region:
 cluster name:
-user arn:  
-subnet id:
