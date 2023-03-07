@@ -4,7 +4,7 @@ kind: ClusterConfig
 
 metadata:
   name: lil-eks
-  region: us-west-1
+  region: AWS_REGION
   tags:
     project: linkedin-learning
 
